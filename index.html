@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Advanced Responsive Webpage</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="https://via.placeholder.com/150x40?text=Logo" alt="Site Logo" />
+      </div>
+      <button id="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="theme-toggle" aria-label="Toggle Dark Mode">🌙</button>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h1>Welcome to My Responsive Page</h1>
+    <p>Your one-stop solution for modern web design.</p>
+    <a href="#contact" class="cta-btn">Get Started</a>
+    <div class="clock" id="clock">--:--:--</div>
+  </section>
+
+  <section id="features" class="features">
+    <input type="text" id="search-input" placeholder="Search features..." />
+    <div class="feature-box">
+      <h2>Responsive Design</h2>
+      <p>Looks great on any device with Flexbox and Grid layouts.</p>
+    </div>
+    <div class="feature-box">
+      <h2>Smooth Experience</h2>
+      <p>Enjoy animations, hover effects, and scroll-to-top functionality.</p>
+    </div>
+    <div class="feature-box">
+      <h2>Semantic Code</h2>
+      <p>Built with clean, accessible, and SEO-friendly HTML5.</p>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About This Project</h2>
+    <p>This webpage was built using semantic HTML5 and modern CSS3 techniques such as Flexbox, Grid, and transitions. It's designed to be fully responsive and interactive.</p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form id="contact-form" novalidate>
+      <input type="text" id="name" placeholder="Your Name" required />
+      <div class="error-msg" id="name-error"></div>
+
+      <input type="email" id="email" placeholder="Your Email" required />
+      <div class="error-msg" id="email-error"></div>
+
+      <textarea id="message" placeholder="Your Message" rows="5"></textarea>
+
+      <button type="submit">Send Message</button>
+      <div id="form-message"></div>
+    </form>
+  </section>
+
+  <button id="scrollTopBtn" title="Go to top">⬆️</button>
+
+  <footer>
+    <p>&copy; 2025 MySite | All rights reserved</p>
+    <div class="socials">
+      <a href="#" aria-label="LinkedIn">LinkedIn</a>
+      <a href="#" aria-label="GitHub">GitHub</a>
+      <a href="#" aria-label="Twitter">Twitter</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
